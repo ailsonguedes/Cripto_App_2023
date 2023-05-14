@@ -1,7 +1,9 @@
 
 def decrip(entry_decr): # função decriptografar
     
-    line_crip = entry_decr # linha do texto a ser decriptografado
+    print("entrou")
+    
+"""    line_crip = entry_decr # linha do texto a ser decriptografado
 
     decript = ''
 
@@ -9,5 +11,5 @@ def decrip(entry_decr): # função decriptografar
         decript = decript + chr (ord(i)-5)
 
     print("") #limpa a caixa
-    print("Texto descriptografado: "+decript) # mosta o texto decriptado
+    print("Texto descriptografado: "+decript) # mosta o texto decriptado """
     
