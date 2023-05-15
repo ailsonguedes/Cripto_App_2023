@@ -1,15 +1,17 @@
 
-def decrip(entry_decr): # função decriptografar
+def decrip(field_decript): # função decriptografar
     
     print("entrou")
     
-"""    line_crip = entry_decr # linha do texto a ser decriptografado
+    line_text = field_decript.get() # linha do texto a ser criptografado
 
-    decript = ''
+    encript = ''
 
-    for i in line_crip:
-        decript = decript + chr (ord(i)-5)
-
-    print("") #limpa a caixa
-    print("Texto descriptografado: "+decript) # mosta o texto decriptado """
+    for i in line_text:
+        encript = encript + chr(ord(i)-5)
+        
+    line_text_cls = "" # limpa a caixa que recebe o texto a ser criptografado
+    line_text = encript # mostra o texto encriptado na caixa 2
     
+    print(line_text)
+  

@@ -1,5 +1,5 @@
-from src.modules import encripto
-from src.modules import decripto
+from src.modules import encripto as enc
+from src.modules import decripto as dec
 import tkinter as tk
 from tkinter import *
 
@@ -29,15 +29,12 @@ field_decript = Entry(mainScreen, width=50, relief='sunken', font='Times 15')
 field_decript.place(x=60, y=260)
 
 # Buttons to cripto and decripto text's 
-button1 = Button(mainScreen, width=15, height=2, text="Cripto", command= lambda: encripto.crip(str(field_cript)), relief='raised', bg=color3)
+button1 = Button(mainScreen, width=15, height=2, text="Cripto", command= lambda: enc.crip(field_cript), relief='raised', bg=color3)
 button1.place(x=250, y=150)
-button2 = Button(mainScreen, width=15, height=2, text="Decripto", relief='raised', bg=color3)
+button2 = Button(mainScreen, width=15, height=2, text="Decripto", command= lambda: dec.decrip(field_decript), relief='raised', bg=color3)
 button2.place(x=250, y=300)
 
-
-
 mainScreen.mainloop()
-
 
 """entry_crip = input("Digite o texto a ser criptografado: ")
 

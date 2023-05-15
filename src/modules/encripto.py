@@ -1,18 +1,20 @@
-import main 
+from main import field_cript
 
-def crip(entry_crip): # função criptografar
+def crip(field_cript): # função criptografar
     
     print("Entrou")
-    
-    line_text = entry_crip # linha do texto a ser criptografado
+  
+    line_text = field_cript.get() # linha do texto a ser criptografado
 
     encript = ''
 
     for i in line_text:
-        encript = entry_crip + chr (ord(i)+5)
+        encript = encript + chr(ord(i)+5)
+        
+    line_text_cls = "" # limpa a caixa que recebe o texto a ser criptografado
+    line_text = encript # mostra o texto encriptado na caixa 2
+    
+    print(line_text)
+  
 
-    str(line_text("")) # limpa a caixa que recebe o texto a ser criptografado
-    str(line_text(encript)) # mostra o texto encriptado na caixa 2
-   
-#entry_crip = ""
 
